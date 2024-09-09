@@ -1,152 +1,52 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9fafc;
-    color: #333;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Header */
 .header {
     background-color: #0077cc;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     color: #fff;
     position: relative;
 }
 
-.logo {
+.header-content {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
 .logo-img {
-    max-width: 120px;
+    max-width: 120px; /* Adjust the max-width to control the size */
     height: auto;
 }
 
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Main Content */
-.main-content {
-    flex: 1;
-    padding: 40px 0;
-}
-
-.app-info {
+.nav-links {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 20px;
 }
 
-.mobile-frame {
-    width: 300px;
-    height: 600px;
-    border: 15px solid #333;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    background-color: #000;
-}
-
-.app-screenshot {
-    width: 100%;
-    height: auto;
-}
-
-.download-info {
-    flex: 1;
-}
-
-.download-info h2 {
-    font-size: 2em;
-    color: #0077cc;
-}
-
-.download-info p {
-    font-size: 1.1em;
-    color: #555;
-    margin: 10px 0 20px;
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1em;
+.nav-link {
     color: #fff;
-    background-color: #0077cc;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-    background-color: #005fa3;
-}
-
-/* Privacy Policy Section */
-.privacy-policy {
-    background-color: #f1f5f9;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.privacy-policy h2 {
-    font-size: 1.8em;
-    color: #333;
-}
-
-.privacy-policy p {
     font-size: 1em;
-    color: #666;
-    margin: 10px 0;
+    transition: color 0.3s;
 }
 
-.policy-link {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: 500;
+.nav-link:hover {
+    color: #ffdd57; /* Highlight color on hover */
 }
 
-.policy-link:hover {
-    text-decoration: underline;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
 
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #aaa;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-link {
-    color: #aaa;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-link:hover {
-    color: #fff;
+    .nav-links {
+        margin-top: 10px;
+    }
 }
