@@ -1,45 +1,86 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafc;
     color: #333;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
 }
 
-header {
-    text-align: center;
-    margin-top: 20px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 {
+/* Header */
+.header {
+    background-color: #0077cc;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
     font-size: 2.5em;
-    color: #0077cc;
+    margin: 0;
 }
 
-p {
+.header p {
     font-size: 1.2em;
-    color: #666;
+    margin-top: 10px;
 }
 
-.download-section {
-    margin: 20px;
-    text-align: center;
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px 0;
+}
+
+.app-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.mobile-frame {
+    width: 300px;
+    height: 600px;
+    border: 15px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #000;
 }
 
 .app-screenshot {
-    width: 200px;
+    width: 100%;
     height: auto;
-    margin-bottom: 20px;
+}
+
+.download-info {
+    flex: 1;
+}
+
+.download-info h2 {
+    font-size: 2em;
+    color: #0077cc;
+}
+
+.download-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0 20px;
 }
 
 .download-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1em;
     color: #fff;
     background-color: #0077cc;
@@ -52,10 +93,48 @@ p {
     background-color: #005fa3;
 }
 
-footer {
-    position: fixed;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
+/* Privacy Policy Section */
+.privacy-policy {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.privacy-policy h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.privacy-policy p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.policy-link {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
     color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-link {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    color: #fff;
 }
