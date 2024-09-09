@@ -15,12 +15,12 @@
 }
 
 .logo-link {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 
 .logo-img {
-    max-width: 120px; /* Adjust the max-width to control the size */
+    max-width: 80px; /* Adjust the max-width to control the size */
     height: auto;
 }
 
