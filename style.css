@@ -22,6 +22,18 @@ body {
     padding: 20px 0;
     text-align: center;
     color: #fff;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    max-width: 120px;
+    height: auto;
 }
 
 .header h1 {
