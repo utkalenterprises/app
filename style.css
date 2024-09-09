@@ -41,7 +41,7 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 100px) {
+@media (max-width: 80px) {
     .header-content {
         flex-direction: column;
     }
